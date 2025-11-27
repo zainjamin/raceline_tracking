@@ -2,6 +2,7 @@ import numpy as np
 
 import matplotlib
 import matplotlib.pyplot as plt
+import matplotlib.patches as patches
 
 from time import time
 
@@ -28,6 +29,7 @@ class Simulator:
         self.lap_started = False
         self.track_limit_violations = 0
         self.currently_violating = False
+
 
     def check_track_limits(self):
         car_position = self.car.state[0:2]
